@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Boxes Demo</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            border: 2px solid rgba(7, 151, 247, 0.856);
+            background-color: lightgray;
+
+        }
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(192, 11, 11, 0.959);
+        
+        }
+
+        .box {
+            padding: 50px;
+            position: relative;
+            width: 120px; 
+            height: 70px; 
+            border: 2px solid rgba(5, 243, 5, 0.863);
+            background-color: rgba(233, 218, 217, 0.897);
+            text-align: center;
+            padding-bottom: 25px; /* padding to not overlap with the delete button */
+        }
+
+        .delete-btn {
+            border: 2px solid rgba(112, 4, 4, 0.918);
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%); /* centering horizontally */
+            background-color: rgba(226, 214, 214, 0.884);
+            border: none;
+            border-radius: 4px;
+            padding: 3px 7px; /* smaller padding for a smaller button */
+            font-size: 0.7em; /* smaller font size */
+            color: rgba(116, 111, 111, 0.863);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <img src="logo.jpg" style="width: 15px; height: 20px; padding-left: 5%;"/>
+    </div>
+    <div class="container">
+        <div class="box" id="box1">
+            Ragul
+            <br>
+            3485
+            <br>
+            abc@gmail.com
+            <button class="delete-btn">Delete</button>
+        </div>
+        <div class="box" id="box2">
+            Ravi
+           <br>
+            9876
+            <br>
+            ravi@gmail.com
+            <button class="delete-btn">Delete</button>
+        </div>
+        <div class="box" id="box3">
+            Santhosh
+            8876
+            santhosh@gmail.com
+            <button class="delete-btn">Delete</button>
+        </div>
+        
+        <div class="box" id="box4">
+            Surya
+           <br>
+            3452
+            <br>
+            surya@gmail.com 
+            <button class="delete-btn">Delete</button>
+        </div>
+        <div class="box" id="box5">
+            Kiran
+            7678
+            kiran@gmail.com
+            <button class="delete-btn">Delete</button>
+        </div>
+          
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
